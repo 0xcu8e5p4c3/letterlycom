@@ -1,0 +1,129 @@
+Buatkan sebuah website lengkap untuk Company Profile dan Promosi Produk, dengan teknologi modern:
+
+Tailwind CSS untuk styling
+
+JavaScript untuk interaktivitas
+
+Vue.js dengan Vite (atau Next.js jika pakai React)
+
+Gunakan GSAP (jika Vue) atau Framer Motion (jika React) untuk animasi interaktif
+
+Responsif, cepat, ringan, dan SEO-friendly
+
+🎯 Tujuan Website
+Menampilkan profil perusahaan profesional
+
+Memperkenalkan produk atau layanan unggulan
+
+Meningkatkan konversi melalui CTA dan form interaktif
+
+Memberi kesan kreatif dan modern melalui animasi dan desain visual
+
+✅ Struktur dan Fitur Halaman:
+1. Landing Page
+Hero section menarik dengan headline, subtext, CTA button
+
+Background visual (SVG animasi, video, atau image)
+
+Scroll animation (parallax / fade-in)
+
+Tombol CTA untuk "Pelajari Lebih Lanjut" atau "Coba Sekarang"
+
+2. Tentang Kami (About Us)
+Visi & misi perusahaan
+
+Timeline perjalanan perusahaan (animated scroll atau step-by-step)
+
+Gambar/foto kantor atau tim
+
+3. Layanan / Produk
+Grid 3 atau 4 kolom
+
+Setiap layanan memiliki ikon, judul, deskripsi
+
+Hover animation dan reveal effect
+
+4. Portofolio / Proyek
+Daftar proyek atau studi kasus
+
+Filter per kategori (misal: desain, aplikasi, web)
+
+Animasi transisi saat filter diubah
+
+5. Testimoni Klien
+Carousel/slider interaktif
+
+Testimoni dalam card dengan nama klien, foto, dan kutipan
+
+6. Tim Kami
+Grid tim
+
+Hover effect memperlihatkan detail tim
+
+Animasi muncul dari bawah saat di-scroll
+
+7. Kontak Kami
+Formulir dengan validasi (nama, email, pesan)
+
+Google Maps (iframe)
+
+Informasi kontak: alamat, email, WhatsApp, jam kerja
+
+8. Footer
+Navigasi cepat
+
+Ikon sosial media
+
+Info kontak singkat
+
+Hak cipta dan tautan penting
+
+🌙 Fitur Tambahan:
+Dark Mode toggle (switchable dengan button/icon)
+
+GSAP / Framer Motion animasi masuk/keluar komponen
+
+SEO Meta Tags dasar:
+
+<title>, <meta description>, <meta og:image>, dsb.
+
+Modular komponen:
+
+Setiap section (Hero, About, Services, dsb) dibuat dalam file .vue atau .jsx terpisah
+
+Responsif penuh:
+
+Mobile-first, mendukung semua resolusi
+
+📦 Output
+Struktur proyek siap deploy:
+
+Untuk Vue: Vite + Vue 3 + Tailwind CSS + GSAP
+
+Untuk React: Next.js + Tailwind CSS + Framer Motion
+
+Semua halaman di-route dengan vue-router atau next/router
+
+Bisa langsung dicoba di Replit, Vercel, atau Netlify
+
+Bersih, konsisten, dan mengikuti praktik pengembangan modern
+
+🛍 Untuk Website Promosi Produk
+Tambahkan juga:
+
+Halaman khusus Produk Unggulan
+
+Deskripsi produk
+
+Fitur-fitur utama
+
+Galeri gambar/video
+
+Harga paket
+
+CTA “Beli Sekarang” atau “Coba Gratis”
+
+Halaman FAQ seputar produk
+
+Section “Kenapa Pilih Kami?” (value proposition)
+
