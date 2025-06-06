@@ -94,7 +94,7 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
         <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-purple-800/70 to-transparent opacity-0 group-hover:opacity-90 transition-all duration-300 flex flex-col justify-end p-6">
           <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
           <p className="text-gray-100 mb-4 text-sm">{item.description}</p>
-          <a href="{item.url}"
+          <a href={item.url}
            target="_blank"
            rel="noopener noreferrer"
            className="text-white bg-blue-500 hover:bg-blue-600 transition-all py-2 px-4 rounded-full inline-flex items-center text-sm font-medium">
