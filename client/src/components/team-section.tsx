@@ -18,20 +18,8 @@ type TeamMember = {
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Muhammad Farhan Fuady',
-    role: 'Chief Executive Officer (CEO) ',
-    bio: 'Information System',
-    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/Farhan.jpeg',
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      email: '3130022022@student.unusa.ac.id'
-    },
-    delay: 100
-  },
-  {
     name: 'Fatwa Bawahsi',
-    role: 'Chief Technology Officer (CTO) ',
+    role: 'Chief Executive Officer (CEO)',
     bio: 'Information System',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/fatwa.jpeg',
     social: {
@@ -42,22 +30,10 @@ const teamMembers: TeamMember[] = [
     delay: 200
   },
   {
-    name: 'Siti Hidayah ',
-    role: 'CMO & CRO',
-    bio: 'Management',
-    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/siti.jpeg',
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      email: '3230024005@student.unusa.ac.id'
-    },
-    delay: 300
-  },
-  {
     name: 'Fathur Rahman Ghozi Eka L',
-    role: 'Chief Operating Officer (COO)',
+    role: 'CTO',
     bio: 'Information System',
-    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/fathur.jpeg',
+    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3130022021.jpg',
     social: {
       linkedin: '#',
       dribbble: '#',
@@ -66,17 +42,41 @@ const teamMembers: TeamMember[] = [
     delay: 400
   },
   {
-    name: 'Indra Nurfauzi',
+    name: 'Popy Firnanda Rohmawati',
     role: 'Chief Financial Officer (CFO)',
     bio: 'Accounting',
-    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/indra.jpeg',
+    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3330023013.jpg',
     social: {
       linkedin: '#',
       dribbble: '#',
-      email: '3330024013@student.unusa.ac.id'
+      email: '3330023013@student.unusa.ac.id'
     },
     delay: 500
-  }
+  },
+    {
+    name: 'Muhammad Ilham Ardiansah',
+    role: 'COO',
+    bio: 'Information System',
+    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3130024004.jpg',
+    social: {
+      linkedin: '#',
+      dribbble: '#',
+      email: '3130024004@student.unusa.ac.id'
+    },
+    delay: 500
+  },
+    {
+    name: 'Sahda Naila Alim',
+    role: 'CMO & CRO',
+    bio: 'Accounting',
+    image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3230024008.jpg',
+    social: {
+      linkedin: '#',
+      dribbble: '#',
+      email: '3230024008@student.unusa.ac.id'
+    },
+    delay: 500
+  },
 ];
 
 export default function TeamSection() {
