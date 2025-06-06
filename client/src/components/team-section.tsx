@@ -7,10 +7,6 @@ type TeamMember = {
   bio: string;
   image: string;
   social: {
-    linkedin?: string;
-    twitter?: string;
-    github?: string;
-    dribbble?: string;
     email: string;
   };
   delay: number;
@@ -23,8 +19,6 @@ const teamMembers: TeamMember[] = [
     bio: 'Information System',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/fatwa.jpeg',
     social: {
-      linkedin: '#',
-      github: '#',
       email: '3130022023@student.unusa.ac.id'
     },
     delay: 200
@@ -35,8 +29,6 @@ const teamMembers: TeamMember[] = [
     bio: 'Information System',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3130022021.jpg',
     social: {
-      linkedin: '#',
-      dribbble: '#',
       email: '3130022021@student.unusa.ac.id'
     },
     delay: 400
@@ -47,32 +39,26 @@ const teamMembers: TeamMember[] = [
     bio: 'Accounting',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3330023013.jpg',
     social: {
-      linkedin: '#',
-      dribbble: '#',
       email: '3330023013@student.unusa.ac.id'
     },
     delay: 500
   },
-    {
+  {
     name: 'Muhammad Ilham Ardiansah',
     role: 'COO',
     bio: 'Information System',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3130024004.jpg',
     social: {
-      linkedin: '#',
-      dribbble: '#',
       email: '3130024004@student.unusa.ac.id'
     },
     delay: 500
   },
-    {
+  {
     name: 'Sahda Naila Alim',
     role: 'CMO & CRO',
     bio: 'Accounting',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/3230024008.jpg',
     social: {
-      linkedin: '#',
-      dribbble: '#',
       email: '3230024008@student.unusa.ac.id'
     },
     delay: 500
@@ -92,8 +78,12 @@ export default function TeamSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our <span className="text-primary">Team</span></h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Meet the talented professionals behind our successful projects.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            Our <span className="text-primary">Team</span>
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Meet the talented professionals behind our successful projects.
+          </p>
         </motion.div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -123,28 +113,11 @@ export default function TeamSection() {
                     <p className="text-primary dark:text-blue-400 mb-3 text-sm">{member.role}</p>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 text-xs leading-relaxed">{member.bio}</p>
                     
-                    <div className="flex justify-center space-x-3">
-                      {member.social.linkedin && (
-                        <a href={member.social.linkedin} className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-all">
-                          <i className="fab fa-linkedin text-lg"></i>
-                        </a>
-                      )}
-                      {member.social.twitter && (
-                        <a href={member.social.twitter} className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-all">
-                          <i className="fab fa-twitter text-lg"></i>
-                        </a>
-                      )}
-                      {member.social.github && (
-                        <a href={member.social.github} className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-all">
-                          <i className="fab fa-github text-lg"></i>
-                        </a>
-                      )}
-                      {member.social.dribbble && (
-                        <a href={member.social.dribbble} className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-all">
-                          <i className="fab fa-dribbble text-lg"></i>
-                        </a>
-                      )}
-                      <a href={member.social.email} className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-all">
+                    <div className="flex justify-center">
+                      <a 
+                        href={`mailto:${member.social.email}`} 
+                        className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-all"
+                      >
                         <i className="fas fa-envelope text-lg"></i>
                       </a>
                     </div>

@@ -167,7 +167,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 dark:text-white mb-1">Address</h4>
-                    <p className="text-gray-600 dark:text-gray-300">123 Innovation Drive, San Francisco, CA 94107, USA</p>
+                    <p className="text-gray-600 dark:text-gray-300">Jl. Tenggilis Utara No.14, Tenggilis Mejoyo, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur 60292, Indonesia</p>
                   </div>
                 </div>
                 
@@ -177,7 +177,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 dark:text-white mb-1">Email</h4>
-                    <p className="text-gray-600 dark:text-gray-300">3130022022@student.unusa.ac.id</p>
+                    <p className="text-gray-600 dark:text-gray-300">3130022023@student.unusa.ac.id</p>
                   </div>
                 </div>
                 
@@ -187,7 +187,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 dark:text-white mb-1">Phone</h4>
-                    <p className="text-gray-600 dark:text-gray-300">+62 896-1226-5513</p>
+                    <p className="text-gray-600 dark:text-gray-300">+62 895-2983-4701</p>
                   </div>
                 </div>
                 

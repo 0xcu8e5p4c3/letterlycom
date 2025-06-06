@@ -10,57 +10,65 @@ type PortfolioItem = {
   image: string;
   category: string;
   delay: number;
+  url: string;
 };
 
 const portfolioItems: PortfolioItem[] = [
   {
     title: 'Astacita.com',
-    description: 'Website ini merupakan platform berita modern yang dikembangkan menggunakan Laravel dan Filament. (Fatwa Bawahsi)',
+    description: 'Website ini merupakan platform berita modern yang dikembangkan menggunakan Laravel dan Filament.',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/astacita.png',
     category: 'web',
-    delay: 200
+    delay: 200,
+    url: 'https://astacita.com'
   },
   {
-    title: 'Generate Surat LTG',
-    description: 'Website generate surat otomatis dan pengarsipan perusahaan. (Muhammad Farhan Fuady)',
+    title: 'Generate Surat astacita',
+    description: 'Website generate surat otomatis dan pengarsipan perusahaan.',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/gen.png',
     category: 'web',
-    delay: 300
+    delay: 300,
+    url: ''
   },
   {
     title: 'Website Portofolio',
-    description: '(Fatwa Bawahsi)',
+    description: '',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/my.png',
     category: 'design',
-    delay: 400
+    delay: 400,
+    url: 'https://workandlearn35.wixsite.com/myportofoliodigital'
   },
   {
     title: 'Website Learning Center',
-    description: 'Website Learning Center Perusahaan. (Muhammad Farhan Fuady)',
+    description: 'Website Learning Center Perusahaan.',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/ltg.jpeg',
     category: 'web',
-    delay: 500
+    delay: 500,
+    url: 'iclt.my.id'
   },  
   {
     title: 'Snapall',
-    description: 'Website Download semua video menggunakan link dari berbagai platform. (Fatwa Bawahsi)',
+    description: 'Website Download semua video menggunakan link dari berbagai platform.',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/snapall.png',
     category: 'web',
-    delay: 600
+    delay: 600,
+    url: ''
   },
     {
     title: 'Admin Panel LTG',
-    description: '(Muhammad Farhan Fuady)',
+    description: '',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/adminpanel.jpeg',
     category: 'web',
-    delay: 600
+    delay: 600,
+    url: ''
   },
     {
     title: 'Konco Dolan Desain',
     description: 'Desain Aplikasi Mobile. (Muhammad Farhan Fuady)',
     image: 'https://raw.githubusercontent.com/0xcu8e5p4c3/S-P/main/img/Screenshot 2025-05-19 235243.png',
     category: 'desain',
-    delay: 300
+    delay: 300,
+    url: ''
   },
 ];
 
@@ -86,7 +94,10 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
         <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-purple-800/70 to-transparent opacity-0 group-hover:opacity-90 transition-all duration-300 flex flex-col justify-end p-6">
           <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
           <p className="text-gray-100 mb-4 text-sm">{item.description}</p>
-          <a href="#" className="text-white bg-blue-500 hover:bg-blue-600 transition-all py-2 px-4 rounded-full inline-flex items-center text-sm font-medium">
+          <a href="{item.url}"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="text-white bg-blue-500 hover:bg-blue-600 transition-all py-2 px-4 rounded-full inline-flex items-center text-sm font-medium">
             View Project <i className="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
