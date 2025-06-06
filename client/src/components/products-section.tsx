@@ -102,7 +102,7 @@ export default function ProductsSection() {
                   <div className="flex items-center justify-between">
                     <Link href="/contact">
                       <Button className={`px-4 py-2 ${product.buttonColor} text-white text-sm`}>
-                        Demo
+                        Buy
                       </Button>
                     </Link>
                     <span className="text-sm font-medium text-gray-900 dark:text-white">{product.price}</span>
